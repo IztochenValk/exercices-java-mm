@@ -46,5 +46,7 @@ public class Main {
             voiture.boost();
             System.out.print("Le véhicule :" + voiture.getNom() + " a désormais une vitesse de " + voiture.getVitesse());
         }
+
+        System.out.println(moto1.plusRapide(voiture3));
     }
 }

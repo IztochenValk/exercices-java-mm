@@ -54,4 +54,9 @@ public class Vehicule {
         }
     }
 
+    public String plusRapide(Vehicule targetVehicule){
+        Vehicule faster = this.getVitesse() > targetVehicule.getVitesse()? this : targetVehicule;
+        return "Le véhicule le plus rapide est: " + faster.getNom() + " avec une vitesse de pointe de " + faster.getVitesse();
+    }
+
 }
