@@ -51,13 +51,6 @@ public class GameRepository {
 
     public boolean saveCategoryToGame(ArrayList<Category> categories, Game game) {
         try {
-            //sécurité
-            if (categories == null || categories.size() == 0) {
-                return false;
-            }
-            if (game == null) {
-                return false;
-            }
 
             //1 Ecrire la requête
             String sql = "INSERT INTO game_category (game_id, category_id) VALUES (?, ?)";
