@@ -18,8 +18,6 @@ public class ManufacturerRepository {
         this.connection = Mysql.getConnexion();
     }
 
-    //Méthodes
-    //Méthode pour ajouter un manufacturer
     public Manufacturer save(Manufacturer manufacturer) {
         try {
             //1 Ecrire la requête
@@ -40,7 +38,6 @@ public class ManufacturerRepository {
         return manufacturer;
     }
 
-    //méthode pour récuperer un manufacturer par son id
     public Manufacturer find(int id) {
         Manufacturer manufacturer = null;
         try {
@@ -62,7 +59,6 @@ public class ManufacturerRepository {
         return manufacturer;
     }
 
-    //Méthode pour retourner la liste de tous les manufacturers (ArrayList)
     public ArrayList<Manufacturer> findAll() {
         ArrayList<Manufacturer> manufacturers = new ArrayList<>();
         try {
@@ -83,7 +79,6 @@ public class ManufacturerRepository {
         return manufacturers;
     }
 
-    //Méthode pour supprimer un manufacturer par son id
     public boolean delete(int id) {
         try {
             //1 Ecrire la requête
