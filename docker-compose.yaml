@@ -1,0 +1,13 @@
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: poo-java-cdafad-db
+    volumes:
+      - poo-java-cdafad-vol:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE:
+    ports:
+      - "3306:3306"
+volumes:
+  poo-java-cdafad-vol:
